@@ -1,0 +1,163 @@
+@charset "utf-8";
+body
+{
+	background-image: url("../images/fondo.jpg" );
+	font-family: "Comic Sans MS";
+}
+header
+{
+	background-image: url("../images/icono.png");
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	margin: 20px;
+	padding: 100px;
+}
+#barra
+{
+	font-size: 15px;
+	width: 72%;
+	margin: auto;
+	background-color: #FB1D59;
+	color: white;
+}
+#barra ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#contacto
+{
+	font-size: 15px;
+	width: 72%;
+	margin: auto;
+	background-color: #FA648D;
+	color: white;
+}
+#contacto ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#contacto > li
+{
+	position: relative;
+	display: inline-block;
+}
+#contacto > li > a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 11px 16px;
+}
+#menu > li
+{
+	position: relative;
+	display: inline-block;
+}
+#menu > li > a
+{
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 11px 16px;
+}
+#menu li a:hover
+{
+	background-color: #DAECF6;
+	color: black;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.submenu
+{
+	position: absolute;
+	width: 120%;
+	background-color: #BC4FFF;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.submenu li a
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 11px;
+}
+#menu li:hover .submenu
+{
+	visibility: visible;
+	opacity: 1;
+}
+#pagina_activa
+{
+	background-color: #FF6C00;
+	font-style: bold;
+
+}
+section
+{
+	background-color: #B5E120;
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+}
+#icono
+{
+	float: left;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+}
+article
+{
+	background-color: #FFDB39;
+	width: 96%;
+	margin: 15px auto;
+	overflow: hidden;
+	text-align: center;
+}
+article > li
+{
+	background-color: #FFDB39;
+	width: 96%;
+	margin: 15px auto;
+	overflow: hidden;
+	text-align: justify;
+	list-style-type: none;
+}/*
+form, #cuadroconf
+{
+	width: 450px;
+	margin: auto;
+	background-color: rgba(0,0,0,0.4);
+	//Padding 10px vertical y 20px horizontal
+	padding: 10px 20px;
+	//Permite que el relleno se vaya hacia adentro del formulario
+	box-sizing: border-box;
+	margin-top:20px;
+	border-radius: 7px; 
+}
+input,textarea
+{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	box-sizing: border-box;
+	font-size:17px;
+	border: none;
+}
+textarea
+{
+	//Ajusta el alto y alto mínimo y máximo del textarea para que no lo desajuste el usuario
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+	min-width: 100%;
+}*/

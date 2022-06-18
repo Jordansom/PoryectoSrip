@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>javaScrip</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+	<header></header>
+	<nav id="barra">
+		<ul id="menu">
+			<li><a id="pagina_activa" href="../main.html">Inicio</a></li>
+			<li><a href="#">Condicionales</a>
+				<ul class="submenu">
+					<li><a href="../condicionales/simple.html">simple</a></li>
+					<li><a href="../condicionales/multiple.html">multiple</a></li>
+					<li><a href="../condicionales/puedes.html">puedes votar</a></li>
+				</ul>
+			</li>
+			<li><a href="#">cliclos</a>
+				<ul class="submenu">
+					<li><a href="../ciclos/paresdo.html">pares del 100 con do while</a></li>
+					<li><a href="../ciclos/paresfor.html">pares del 100 con for</a></li>
+					<li><a href="../ciclos/pareswhile.html">pares del 100 con while</a></li>
+					<li><a href="../ciclos/sumatoriado.html">sumatorial al 100 con do while</a></li>
+					<li><a href="../ciclos/sumatoriafor.html">sumatorial al 100 con for</a></li>
+					<li><a href="../ciclos/sumatoriawhile.html">sumatorial al 100 con while</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Arreglos</a>
+				<ul class="submenu">
+					<li><a href="../Arreglos/bubble.html"></a>arreglo bubble</li>
+					<li><a href="../Arreglos/insertion.html"></a>arreglo insertion</li>
+					<li><a href="../Arreglos/selection.html"></a>arreglo selection</li>
+				</ul>
+			</li>
+			<li><a href="#">Operadores Base</a>
+				<ul class="submenu">
+					<li><a href="../operacionesbase/media.html"></a>media de 3 numeros</li>
+					<li><a href="../operacionesbase/nummayor.html"></a>posicion del numero mayor de un arreglo</li>
+					<li><a href="../operacionesbase/operaciontexto.html"></a>operacion con texto</li>
+					<li><a href="../operacionesbase/orden.html"></a>ordenamiento de numeros</li>
+					<li><a href="../operacionesbase/paresimpares.html"></a>numero par o impar</li>
+					<li><a href="../operacionesbase/procsuma.html"></a>Producto de 2 numeros</li>
+					<li><a href="../operacionesbase/sumaareglos.html"></a>suma de 2 Arreglos</li>
+					<li><a href="../operacionesbase/tablas.html"></a>tabla de un numero</li>
+				</ul>
+			</li>
+	</nav>
+	<div>
+	<section>
+		<article>
+			<hr>
+			<h2>Sumatorias de listas </h2>
+			<hr>
+		</article>
+		<article>
+			<hr>
+			<script type="text/javascript">
+                var lista=new Array(10);
+                var lista2=new Array(10);
+                rellenar(lista);
+                rellenar(lista2);
+                document.write("  lista 1  ");
+                document.write(lista);
+                document.write("  lista 2  ");
+                document.write(lista2);
+                document.write("  sumatoria de las 2 listas  ");
+                sumatoria(lista,lista2)
+                function rellenar(matriz)
+                {
+                    var largo, valor, ind;
+                    largo = matriz.length;
+                    for(ind = 0; ind < largo; ind++)
+                        {
+                            valor = Math.random()*20;
+                            matriz[ind] = Math.round(valor);
+                        }
+                }
+                function sumatoria(matriz,matriz2){
+                    var lista3=new Array(10);
+                    for(let i=0;i<matriz.length;i++){
+                        lista3[i]=(matriz[i]+matriz2[i]);
+                    }
+                    document.write(lista3);
+                }
+                </script>
+		</article>
+	</section>
+	</div>
+	<footer>
+	</footer>
+
+</body>
+</html>
